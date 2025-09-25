@@ -1,0 +1,23 @@
+class Solution {
+    public static int gcd(int a, int b) {
+        // code here
+       int rem=1,divisor,divident;
+       if(a>b){
+           divident = a;
+           divisor = b;
+       }
+       else{
+           divident = b;
+           divisor = a;
+       }
+       while(rem>0){
+           rem=divident%divisor;
+           if(rem>0){
+               divident=divisor;
+               divisor=rem;
+           }
+       }
+       return divisor;
+       
+    }
+}
