@@ -1,0 +1,15 @@
+class Solution {
+    public static int intersectSize(int a[], int b[]) {
+        // Your code here
+        int c=0;
+        HashSet<Integer> val=new HashSet<>();
+        for(int i:a){
+            val.add(i);
+        }
+        for(int i:b){
+            if(val.contains(i))
+            c+=1;
+        }
+        return c;
+    }
+}
