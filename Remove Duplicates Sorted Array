@@ -1,0 +1,17 @@
+class Solution {
+    // Function to remove duplicates from the given array.
+    ArrayList<Integer> removeDuplicates(int[] arr) {
+    // code here
+    Set<Integer> se=new LinkedHashSet<>();
+        for(int val:arr){
+            se.add(val);
+        }
+        return new ArrayList<>(se);
+        /*int[] ans=new int[arr.length];
+        int i=0;
+        for(int val:se){
+            ans[i++]=val;
+        }
+        return Arrays.asList(ans);*/
+    }
+}
